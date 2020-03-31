@@ -14,7 +14,6 @@ import logging
 # Modbus TCP Server/Slave Class
 #
 # TODO: Implement conversion of hr-register value to 16bit & split into bits
-# TODO: Copy Modbus data into load connection driver
 # --------------------------------------------------------------------------- #
 class ModbusSlaveUnit():
 
@@ -62,5 +61,5 @@ if __name__ == "__main__":
     HOST = '192.168.127.7'
     PORT = 502
 
-    supplypit_1 = ModbusSlaveUnit()
-    supplypit_1.start_modbus_slave(HOST, PORT)
+    sp_1 = ModbusSlaveUnit()
+    sp_1.start_modbus_slave(HOST, PORT)
